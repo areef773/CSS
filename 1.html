@@ -1,0 +1,36 @@
+<!-- Create a hover effect with multiple properties changing. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  background-color: #3498db;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    letter-spacing 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2ecc71;
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+</style>
+</head>
+<body>
+
+<button class="button">Hover Me</button>
+
+</body>
+</html>

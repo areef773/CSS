@@ -1,0 +1,46 @@
+<!-- Animate text typing effect. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111;
+  color: #00ff99;
+  font-family: monospace;
+}
+
+.typing {
+  width: 22ch;              /* Adjust to match text length */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #00ff99;
+  font-size: 28px;
+  animation: 
+    typing 3s steps(22),
+    blink 0.7s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 22ch }
+}
+
+/* Cursor blink */
+@keyframes blink {
+  50% { border-color: transparent }
+}
+</style>
+</head>
+<body>
+
+<div class="typing">Hello, Welcome Here!</div>
+
+</body>
+</html>
